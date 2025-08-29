@@ -7,7 +7,7 @@
     <style>
         body
         {
-            background-color: lightblue;
+            background-color: rgb(217, 223, 224);
         }
 
         h1
@@ -29,17 +29,49 @@
 
         table,th,td
         {
-          border : 1px solid black;
+          border: 1px solid red;
           border-collapse: collapse;
           padding: 7px;
         }
+
+        .largura
+        {
+            width: 100%;
+        }
+
+        .sublinhado
+        {
+            text-decoration:  underline;
+        }
+
+        .destaque
+      {
+        background-color: yellow;
+        border : 2px solid  red;
+      }
+
+      th
+      {
+         background-color: rgb(122, 56, 56);
+         color : whitesmoke
+      }
+
+      td
+      {
+        background-color : rgb(245, 226, 226); 
+         color : black
+      }
+
+      .verde
+      {
+        background-color :rgb(188, 255, 188);
+      }
     </style>
 
 </head>
 <body>
-    
     <h1>Exercício 2: Tabela estilizada com cores e classes</h1>
-
+    <div class="caixa">
     <h3>1) Monte e estilize a tabela</h3>
 
     <p>A tabela a segur utiliza cabeãlho destacado,
@@ -47,18 +79,53 @@
         .destaque. Oberseve as bordas vermelhas 
         e o colapso de bordas, como visto no exemplo5.
     </p>
-
-    <h4>Estoque de Produtos</h4>
-
-    <table>
+   
+    <h4>Estoque de produtos 
+     <table class="largura">
         <tr>
-            <td>Produto</td>
-            <td>Categoria</td>
-            <td>Preço</td>
-            <td>Disponibilidade</td>
+            <th>Produto</ths>
+            <th>Categoria</th>
+            <th>Preço</th>
+            <th>Disponibilidade</th>
+        </tr>
+
+        <tr>
+            <td>Mouse</td>
+            <td>Periféricos</td>
+            <td>R$ 80,00</td>
+            <td>Em estoque</tds>
+        </tr>
+
+        <tr>
+            <td class="verde">Teclados</td>
+            <td class="verde">Periféricos</td>
+            <td class="destaque">R$ 120,00s</td>
+            <td class="verde">Fora de estoque</td>
+        </tr>
+        
+        <tr>
+            <td>Monitor</td>
+            <td>Display</td>
+            <td>R$ 850,00</td>
+            <td class="sublinhado">Em reposição</td>
+        </tr>
+
+        <tr>
+            <td class="verde">Headset</td>
+            <td class="verde">Áudio</td>
+            <td class="verde">R$ 210,00</td>
+            <td class="verde">Em estoque</td>
         </tr>
     </table>
+    </h4>
+    <p>
+       Tarefas:
+    </p>
 
+    <ul>
+        <li>Adicione duas novas linhas de produtos e aplique .negrito, .italico, .sublinhado conforme desejar</li>
+        <li>Aplique a classse .destaque em uma célula diferente e obsever o efeitos</li>
+</div>
 
 </body>
 </html>
