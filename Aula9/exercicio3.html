@@ -9,60 +9,93 @@
             margin: 0;
             font-family: Arial, sans-serif;
             background-color: #f2f2f2;
-            text-align: center;
         }
 
-        .topo
-        {
-            background-color: rgb(99, 3, 159);
-            color:white;
-            height: 200px;
+        header {
+            background-color: rgb(100, 8, 100);
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+        }
+
+        .logos h1, .logos h2 {
+            margin: 0;
+            font-weight: normal;
+        }
+
+        nav {
+            display: flex;
+            gap: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            border: 1px solid white;
+            padding: 8px 14px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            background-color: white;
+            color: rgb(100, 8, 100);
+        }
+
+        main {
+            text-align: center;
+            margin: 60px;
+            color: rgb(100, 8, 100);
+        }
+
+        footer {
+            background-color: rgb(100, 8, 100);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
 
         .conteudo
         {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
  
-
-            color: rgb(0, 0, 0);
+            background-color: rgb(100, 8, 100);
+            color: aliceblue;
             font-size: 20px;
-            padding: 50px;
-        }
-
-        a
-        {
-            color :rgb(227, 222, 67);
-            text-decoration: none;
+            padding: 20px;
         }
     </style>
 </head>
 <body>
+    <header>
+        <div class="conteudo">
 
-    <div class="topo">
-
-        <div>
-            <img src="logo_etec_fg_1000x274.png" width="500px">
+            <div>
+                <img src="logo_etec_fg_1000x274.png" width="500px">
+            </div>
         </div>
 
-        <div>
-           <a href="exercicio1.html">Exercício 1</a>
-           <a href="exercicio2.html">Exercício 2</a>
-           <a href="exercicio3.html">Exercício 3</a>
-           <a href="exercicio4.html">Exercício 4</a>
-            <a href="exercicio5.html">Exercício 5</a>
-        </div>
+        <nav>
+            <a href="#">Exercício 1</a>
+            <a href="#">Exercício 2</a>
+            <a href="#">Exercício 3</a>
+            <a href="#">Exercício 4</a>
+            <a href="#">Exercício 5</a>
+        </nav>
+    </header>
 
-    </div>
+    <main>
+        <h3>Exercício 3</h3>
+    </main>
 
-    <div class="conteudo">
- 
-        <div>Exercício 3</div>
-        
-    </div>
-
-
-
-</div>
+    <footer>
+        <p>Elaborado por Esther Vitória Ribeiro</p>
+    </footer>
 </body>
 </html>
